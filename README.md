@@ -42,7 +42,7 @@ jw-takehome/
         Footer.jsx  
         NavBar.jsx
         
-        styles/ >all styling goes here
+      styles/ >all styling goes here
          assets/
          css/
          scss/
