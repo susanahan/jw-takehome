@@ -1,6 +1,5 @@
-# Take Assessment Test by JW Player
+# Take Assessment by JW Player
 
-* Making a front-end app 
 
 ![JW Player design](/src/styles/assets/design.png)
 
@@ -43,8 +42,8 @@ jw-takehome/
         Footer.jsx  
         NavBar.jsx
         
-      styles/ >all styling goes here
-        assets/
+        styles/ >all styling goes here
+         assets/
          css/
          scss/
 ```
