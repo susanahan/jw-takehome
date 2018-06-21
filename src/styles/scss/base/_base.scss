@@ -1,0 +1,159 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+body {
+  color: $color-text;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $font-stack-primary;
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: $font-stack-secondary;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  padding-bottom:60px;
+  &:hover {
+    color: $color-secondary;  
+  }
+}
+
+.header-page{
+  background:
+  linear-gradient(to bottom right,
+      rgba(93, 170, 231, 0.65), 
+      rgba(93, 170, 231, 0.85)
+  ),
+  url('http://78.media.tumblr.com/d340d7f24d7122d1ba48dba04b137899/tumblr_o1t147YVY61slhhf0o1_1280.jpg') center center no-repeat; 
+  background-size:cover;
+  width:100%;
+  height:auto;
+  animation: fadeIn 5s ease;
+
+  p{
+      text-transform:uppercase;
+      font-weight:normal;
+      font-size: 3.5em;
+
+      text-align: center;
+      color:$white;
+      letter-spacing: 0.15em;
+  }
+  #sub{
+    font-size: 1em;
+    margin-top:-60px;
+    text-transform:none;
+
+  }
+
+}
+
+
+
+.features-pg{
+  background-color:$color-features;
+  margin-top: -30px;
+  color:$white;
+
+  >h4{
+    letter-spacing: 0.15em;
+    font-weight:normal;
+    font-family: $font-stack-primary;
+    padding-top: 60px;
+  }
+  .list{
+    color:$white;
+  }
+}
+
+.section-pg{
+  background-color:$white;
+  color:$color-section-text;
+ p{
+      color:$color-section-text;
+  }
+
+  #section-img{
+    height:350px;
+  }
+ 
+  .section-container {
+    padding-left:10%;
+    padding-right:10%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    text-align: left;
+
+    }
+
+.section-item1 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    animation: fadeInLeft 5s ease;
+
+    }
+
+.section-item2 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    animation: fadeInRight 5s ease;
+
+    }
+ 
+}

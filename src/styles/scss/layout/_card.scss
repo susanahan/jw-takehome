@@ -1,0 +1,50 @@
+// ======================================
+//  Card Styles
+// ======================================
+
+.card {
+  animation: bounceIn .75s ease;
+
+  display: flex;
+  flex-direction: column;
+  margin: $gutter;
+  color:$white;
+  font-weight:normal;
+  font-size: 0.8em;
+  h3 {
+    margin: 0.35em 0 0;
+    line-height: 1.25;
+    font-weight:normal;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-weight:normal;
+    text-transform: uppercase;
+    align-items: center;
+    color:#949eb3;
+    font-size:0.8em;
+  }
+
+  p{
+    font-size:0.8em;
+    margin-top:-10px;
+  }
+ 
+  #p-list{
+    font-size:0.8em;
+    color:#949eb3;
+    margin-top:-10px;
+  }
+ 
+  #section-list{
+    color:$color-section-text;
+  }
+
+  @media (min-width: $break-s) {
+    flex: 1 per-line(2);
+  }
+  @media (min-width: $break-l) {
+    flex-basis: per-line(3);
+  }
+}

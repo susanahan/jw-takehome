@@ -1,34 +1,35 @@
 import React, { Component } from 'react';
 import data from './data.json';
-//import axios from 'axios';
 import './styles/css/App.css';
+import Header from './components/Home/Header';
+import Features from './components/Home/Features';
+import Section from './components/Home/Section';
+import FooterNav from './components/Nav/Footer';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      userList: []
+      dataAPI: data.results[0].data
     };
    }
 
 
   render() {
-    console.log(this.state.userList);
-    const elem = data.results[0].data;
-    console.log('data =>', elem);
+    const { dataAPI } = this.state;
 
-    console.log('headergroup', elem['header-group'][0]);
+ console.log(dataAPI)
     return (
-      <div className='bg-img'>
-          <ul>
-            hiii
-        {/* {Object.keys(elem).map((v, i) => <li key={i}>{v} {data[v]}</li> )} */}
-          {/* {
-            data.map(function(movie){
-              return <li>{movie.id} - {movie.title}</li>;
-            })
-          } */}
-          </ul>
+      <div>
+        <Header headerData={dataAPI['header-group'][0]} 
+                heroData={dataAPI['hero-image']} 
+                subheadData={dataAPI['subhead']}
+                buttonData={dataAPI['button']}/>
+
+        <Features featuresData={dataAPI['body']} />
+        <Section  sectionLeftData={dataAPI['body'][1]} 
+                  sectionRightData={dataAPI['body'][2]} />
+           <FooterNav />
         </div>
     );
   }

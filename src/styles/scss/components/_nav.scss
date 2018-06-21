@@ -1,0 +1,43 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+.main-nav{
+  text-transform: uppercase;
+  justify-content: space-between;
+  display:flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    opacity:0.9;
+    overflow: hidden;
+    }
+  li{
+      display:inline-block;
+      margin:0 0.65em;
+      color:$white;
+  }
+  @extend %clearfix;
+  a{
+      color:$white;
+      font-size:0.85em;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding:0;
+      display: block;
+  }
+  .nav-left {
+      margin-top:$navtop;
+      display:flex;
+      align-items:center;
+  }
+  .nav-right {
+      margin-top:$navtop;
+      display:flex;
+      align-items:center;
+  }
+}

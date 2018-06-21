@@ -1,0 +1,41 @@
+// ======================================
+//  Footer Styles
+// ======================================
+
+.footer {
+  height: 55px;
+  background-color: #e1e5eb;
+  margin-top: 5.5em;
+  display:flex;
+  color:#515e7a;
+
+
+  .footer-items{
+    display:flex;
+    align-items:center;
+    font-size:0.8em;
+    @extend %clearfix;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      opacity:0.9;
+      overflow: hidden;
+      }
+    li{
+        display:inline-block;
+        margin:0 0.65em;
+    }
+    .item-left {
+      display:flex;
+      align-items:top;
+      padding-left:100px;
+    }
+    .item-right {
+      display:flex;
+      align-items:center;
+      padding-left:70px;
+    }
+  }
+
+}

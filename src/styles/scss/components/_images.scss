@@ -1,0 +1,23 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:1.7em;
+}
+
+.img-featured {
+  width: 165px;
+  border: 4px solid $white; 
+  border-radius: 50%;
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+  @media (max-width: $break-xs) {
+    display: none;
+  }
+}
+
