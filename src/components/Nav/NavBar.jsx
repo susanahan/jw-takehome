@@ -1,7 +1,7 @@
 import React from "react";
 import Button from '../Home/Button';
 import '../../styles/css/App.css';
-
+import logo from '../../styles/assets/JWPlayer-Logo.png'
 
 const HeaderNav = () => {
     return (
@@ -9,6 +9,7 @@ const HeaderNav = () => {
         <div className="main-nav">
 
          <ul className='nav-left'>
+         <li><img className='icon' src={logo} alt='jw-logo'/></li>
              <li>solutions</li>
              <li>customer</li>
              <li>pricing</li>

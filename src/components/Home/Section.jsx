@@ -12,7 +12,7 @@ let right_text = sectionRightData.primary.section_text.map((text)=>{return text.
     return (
         <div className='section-pg'>
         <div className='section-container'>
-            <div className='section-item1'><img id='section-img' src={left_img} /></div>
+            <div className='section-item1'><img id='section-img' src={left_img} alt='monetization-img'/></div>
             <div className='section-item2'><h3 id='section-list'>{left_header}</h3>
                 <p id='section-list'>{left_text}</p></div>
             </div>
@@ -21,7 +21,7 @@ let right_text = sectionRightData.primary.section_text.map((text)=>{return text.
             <div className='section-item1'><h3>{right_header}</h3>                
             <p>{right_text}</p></div> 
 
-            <div className='section-item2'><img id='section-img' src={right_img} /></div>
+            <div className='section-item2'><img id='section-img' src={right_img} alt='developer-tools-img' /></div>
 
         </div>
         </div>
