@@ -36,15 +36,15 @@ $max-width: 1000px;
 $gutter: 10px;
 $navtop:4em;
 
+//Smartphones (portrait and landscape)
+$screen-sm-min: 320px;
+$screen-sm-max: 480px;
 
-// Breakpoints
-$break-xs: 575px;
-$break-s: 576px;
-$break-m: 768px;
-$break-l: 992px;
+// iPads (portrait and landscape)
+$screen-md-min: 768px;
+$screen-md-max: 1024px;
 
-
-
-
+$screen-lg-min: 700;
+$screen-lg-max: 1224px;
 
 

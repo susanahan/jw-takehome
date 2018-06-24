@@ -38,6 +38,7 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+
 }
 
 
@@ -74,38 +75,45 @@ a {
       rgba(93, 170, 231, 0.65), 
       rgba(93, 170, 231, 0.85)
   ),
-  url('http://78.media.tumblr.com/d340d7f24d7122d1ba48dba04b137899/tumblr_o1t147YVY61slhhf0o1_1280.jpg') center center no-repeat; 
+  url('../../styles/assets/mountain-bg.jpg') center center no-repeat; 
   background-size:cover;
   width:100%;
   height:auto;
   animation: fadeIn 5s ease;
 
   p{
-      text-transform:uppercase;
-      font-weight:normal;
+    @include sm {
+      font-size: 2.5em;
+    }
+      text-transform: uppercase;
+      font-weight: normal;
       font-size: 3.5em;
-
       text-align: center;
       color:$white;
       letter-spacing: 0.15em;
   }
-  #sub{
+  #sub {
+    @include md {
+      font-size:2em;
+    }
     font-size: 1em;
     margin-top:-60px;
     text-transform:none;
-
   }
-
 }
 
 
-
-.features-pg{
+.features-pg {
   background-color:$color-features;
   margin-top: -30px;
   color:$white;
-
+  @include md{
+   font-size:23px;
+   }
   >h4{
+    @include md{
+      font-size:1.8em;
+    }
     letter-spacing: 0.15em;
     font-weight:normal;
     font-family: $font-stack-primary;
@@ -116,18 +124,37 @@ a {
   }
 }
 
-.section-pg{
+.section-pg {
   background-color:$white;
   color:$color-section-text;
- p{
+  @include sm {
+    width:240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include md {
+    font-size:23px;
+    }
+ 
+ p {
       color:$color-section-text;
   }
 
-  #section-img{
+  #section-img {
     height:350px;
+    @include sm{
+      width:200px;
+    }
   }
  
   .section-container {
+    @include sm{
+      @include center;
+      width:240px;
+      display: flex;
+      flex-direction: column;
+    }
     padding-left:10%;
     padding-right:10%;
     margin: 0;
@@ -137,23 +164,33 @@ a {
     align-content: stretch;
     align-items: center;
     text-align: left;
-
     }
 
-.section-item1 {
+  .section-item1 {
+    @include sm {
+      margin-left: 100px;  
+      display: flex;
+      flex-direction: column;
+      width:240px;
+    }
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
     animation: fadeInLeft 5s ease;
-
     }
 
 .section-item2 {
+  @include sm{
+    @include center;
+    width: 250px;    
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+  }
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
     animation: fadeInRight 5s ease;
-
     }
- 
 }
+

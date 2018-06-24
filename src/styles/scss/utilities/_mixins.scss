@@ -2,20 +2,6 @@
 //  Mixins
 // =========================================
 
-// Slanted effect
-@mixin skewed {
-  position: relative;
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50px; 
-    position: absolute;
-    transform: skewY(-2deg);
-    @content;
-  }
-}
-
 // Center containers
 @mixin center {
   width: 90%;
@@ -23,3 +9,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Small devices
+@mixin sm {
+  @media only screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}  
+
+// Medium devices
+@mixin md {
+  @media only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
+      @content;
+  }
+}
+

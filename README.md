@@ -1,6 +1,5 @@
-# Take Assessment Test by JW Player
+# Take Assessment by JW Player
 
-* Making a front-end app 
 
 ![JW Player design](/src/styles/assets/design.png)
 
@@ -10,9 +9,18 @@ Spin up a simple and scalable React project that renders a single web page. It s
 3 Days
 
 ## Project Installation
-``` npm install | yarn install
-npm start | yarn start
-```
+Fork Clone Repo
+
+`$ git clone https://github.com/susanahan/jw-takehome.git`
+
+Install all dependencies:
+
+`$ npm install | yarn install`
+
+You may run the project by typing the following in the terminal:
+
+`$ npm start | yarn start`
+
 
 ##### File structure:  for styling I used SASS 
 ```
@@ -44,7 +52,7 @@ jw-takehome/
         NavBar.jsx
         
       styles/ >all styling goes here
-        assets/
+         assets/
          css/
          scss/
 ```
@@ -65,3 +73,6 @@ jw-takehome/
 *	Add your choice of CSS animations to make the page more slick and interactive
 *	Add your choice of build tasks to optimize your app as you see fit
 *	Target the latest versions of Chrome and Firefox for cross-browser compatibility. Support for Edge, IE11, and Safari is a plus
+
+###### Thoughts
+I really enjoyed making this website. It was fun trying to figure out the best way to create the layout. :)

@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
 import HeaderNav from '.././Nav/NavBar';
-
 import '../.././styles/css/App.css';
 
 const Header = ({headerData, heroData, subheadData, buttonData}) => {
@@ -13,8 +12,11 @@ const Header = ({headerData, heroData, subheadData, buttonData}) => {
     return (
         <div className='header-page'>
             <HeaderNav />
-            <p><img className='icon' src={HeaderImg} alt="jw-platform-icon"/>
-            {HeaderTitle}</p>
+            <p>
+                <img className='icon' src={HeaderImg} alt="jw-platform-icon"/>
+                {HeaderTitle}
+            </p>
+
             <p id='sub'>{HeaderSub}</p>
             <Button
                 style_class='btn-info'
@@ -25,7 +27,6 @@ const Header = ({headerData, heroData, subheadData, buttonData}) => {
             <img className='center' src={HeroImg} alt='hero-icon' />
         </div>
       )
-    
   }
 
 export default Header;

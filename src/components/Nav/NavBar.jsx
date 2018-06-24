@@ -5,9 +5,7 @@ import logo from '../../styles/assets/JWPlayer-Logo.png'
 
 const HeaderNav = () => {
     return (
-  
         <div className="main-nav">
-
          <ul className='nav-left'>
          <li><img className='icon' src={logo} alt='jw-logo'/></li>
              <li>solutions</li>

@@ -4,7 +4,6 @@
 
 .card {
   animation: bounceIn .75s ease;
-
   display: flex;
   flex-direction: column;
   margin: $gutter;
@@ -26,25 +25,30 @@
     font-size:0.8em;
   }
 
-  p{
+  p {
     font-size:0.8em;
     margin-top:-10px;
   }
  
-  #p-list{
+  #p-list {
     font-size:0.8em;
     color:#949eb3;
     margin-top:-10px;
   }
  
-  #section-list{
+  #section-list {
     color:$color-section-text;
   }
 
-  @media (min-width: $break-s) {
-    flex: 1 per-line(2);
+  @include sm {
+    font-size:30px;
+    width: 300px;
   }
-  @media (min-width: $break-l) {
-    flex-basis: per-line(3);
+
+  @include md {
+    font-size: 55px;
+    flex-direction: column;
+    align-items: center;
   }
+
 }

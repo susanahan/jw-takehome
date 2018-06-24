@@ -9,29 +9,21 @@
   height: 100%;
   font-size: 2rem;
   justify-content: space-between;
-  @media (min-width: $break-m) {
+
+  @include sm {
+    width:240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include md {
     @include center;
+    width: 550px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+
 }  
-
-
-// Inner
-.inner {
-  padding: 0.5em 1em;
-}
-
-
-// Intro
-.intro {
-  margin: auto;
-  padding: 1em 1em 3em; 
-  p {
-    font-size: 1.2em; 
-  } 
-  @media (min-width: $break-l) {
-    width: 45%;
-  }
-}
-
-
 

@@ -14,11 +14,9 @@ class App extends Component {
     };
    }
 
-
   render() {
     const { dataAPI } = this.state;
 
- console.log(dataAPI)
     return (
       <div>
         <Header headerData={dataAPI['header-group'][0]} 
@@ -29,7 +27,7 @@ class App extends Component {
         <Features featuresData={dataAPI['body']} />
         <Section  sectionLeftData={dataAPI['body'][1]} 
                   sectionRightData={dataAPI['body'][2]} />
-           <FooterNav />
+        <FooterNav />
         </div>
     );
   }
